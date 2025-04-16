@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ekovern - Dev</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EKOVERN Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="jscript.js"></script>
 </head>
 <body>
-  <div class="env-banner">DEVELOPMENT ENVIRONMENT</div>
+  <!-- Header with purple banner -->
+  <header>
+    <nav class="nav-container">
+      <!-- Added "Development Environment" text to the top banner -->
+      <p class="env-banner">Development Environment</p>
+    </nav>
+  </header>
 
-  <div class="container">
-    <img src="https://i.imgur.com/your-logo.png" alt="Ekovern Logo" class="logo" />
-    <h1 class="title">Ekovern</h1>
-    <p class="tagline">Smart. Simple. Secure.</p>
+  <!-- Main content area -->
+  <main>
+    <section class="login-section">
+      <!-- Single logo that has "EKOVERN" + tagline but without "COMING SOON" -->
+      <img src="ekovern_transparent_logo_only.png" alt="EKOVERN Logo" class="login-logo">
 
-    <div class="coming-soon">Coming Soon</div>
+      <!-- The login form -->
+      <form class="login-form" action="#" method="post">
+        <label for="username">Username (or Email):</label>
+        <input 
+          type="text" 
+          id="username" 
+          name="username"  
+          required
+        >
 
-    <form class="login-form">
-      <input type="email" placeholder="Email" required />
-      <input type="password" placeholder="Password" required />
-      <button type="submit">Login</button>
-    </form>
-  </div>
+        <label for="password">Password:</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password"  
+          required
+        >
 
-  <script src="script.js"></script>
+        <button type="submit" class="login-button">Login</button>
+      </form>
+    </section>
+  </main>
 </body>
 </html>
